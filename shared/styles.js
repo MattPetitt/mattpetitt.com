@@ -188,10 +188,9 @@ const base = {
     zIndex: 0,
   },
   ".react-pdf__Page__svg": {
-    backgroundColor: "var(--background) !important",
+    backgroundColor: "transparent !important",
     "& *": {
-      fill: "var(--background) !important",
-      stroke: "none !important",
+      fill: "transparent !important",
     },
   },
   ".react-pdf__Page__textContent": {
