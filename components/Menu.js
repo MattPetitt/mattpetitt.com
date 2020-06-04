@@ -16,7 +16,7 @@ const Menu = () => {
     <nav>
       <NavLink href="/">Home</NavLink>
       <NavLink href="/projects">Projects</NavLink>
-      <NavLink href="/resume">Resume</NavLink>
+      <NavLink href="/MattPetitt.pdf">Resume</NavLink>
       <NavLink href="/utils">Utils</NavLink>
     </nav>
   );
