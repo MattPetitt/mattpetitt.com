@@ -53,9 +53,9 @@ const base = {
     color: "var(--text)",
     fontFamily: "sans-serif",
     height: "100%",
-    lineHeight: "1.4rem",
   },
   "*": {
+    lineHeight: "2rem",
     boxSizing: "border-box",
   },
   main: {
