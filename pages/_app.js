@@ -1,29 +1,34 @@
-import NextApp from 'next/app'
-import Head from 'next/head'
-import { CacheProvider } from '@emotion/core'
+import Head from "next/head";
+import Navbar from "components/Navbar";
+import "tailwindcss/tailwind.css";
+import "./styles.css";
 
-// Use only { cache } from 'emotion'. Don't use { css }.
-import { cache } from 'emotion'
+const links = [
+  {
+    href: "/projects",
+    content: "Projects",
+  },
+  {
+    href: "/resume",
+    content: "Resume",
+  },
+  {
+    href: "/utils",
+    content: "Utils",
+  },
+];
 
-import { globalStyles } from 'shared/styles'
-
-export default class App extends NextApp {
-    render() {
-        const { Component, pageProps } = this.props
-        return (
-            <CacheProvider value={cache}>
-                {globalStyles}
-                <Head>
-                    <title>Matt Petitt</title>
-                    <meta name="description" content="UX Developer" />
-                    <link
-                        rel="shortcut icon"
-                        href="/favicon.png?v=1"
-                        type="image/png"
-                    ></link>
-                </Head>
-                <Component {...pageProps} />
-            </CacheProvider>
-        )
-    }
+export default function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      <Head>
+        <title>Matt Petitt - UX Dev</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Navbar title="Matt Petitt" links={links} />
+      <main>
+        <Component {...pageProps} />
+      </main>
+    </>
+  );
 }

@@ -1,4 +1,3 @@
-import { withRouter } from 'next/router'
-import Error from 'components/Error'
+import Error from "./_error";
 
-export default withRouter(Error)
+export default Error;
