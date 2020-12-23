@@ -10,7 +10,6 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="description" content="Matt Petitt" />
           <meta property="og:title" content="Matt Petitt" key="title" />
           <meta
