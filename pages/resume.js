@@ -34,12 +34,34 @@ export default function Resume() {
                 <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                   <p className="text-sm font-medium text-gray-500">Profile</p>
                   <p className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                    I’m a UI dev and team lead based in Reston, Virginia. For
-                    the last seven years, I have helped companies in the DC area
-                    design, launch, and maintain modern user interfaces. My most
-                    recent work has focused on design systems, internal
-                    libraries, and web applications built with modern Javascript
-                    and React.
+                    I’m a UI dev, team lead, and people manager based in Reston,
+                    Virginia. For the last eight years, I have helped companies
+                    in the DC area design, launch, and maintain modern user
+                    interfaces. My most recent work has focused on design
+                    systems, component libraries, and web applications built
+                    with modern Javascript and React.
+                  </p>
+                </div>
+                <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                  <p className="text-sm font-medium text-gray-500">
+                    <span className="text-black font-semibold">
+                      Front-End Engineer
+                    </span>
+                    <br />
+                    Amazon AWS
+                  </p>
+                  <p className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                    <p className="text-gray-500">
+                      Javascript, React, UX, Data Visualization, Testing
+                    </p>
+                    I build and maintain applications for querying and
+                    visualizing AWS service health across regions. Due to the
+                    massive amounts of data our customers view and interact
+                    with, I spend most of my development time focusing on our
+                    applications’ performance, accuracy, and UX. I’ve planned,
+                    designed, and architected many core features of the UI in
+                    close collaboration with our customers and backend
+                    engineering team.
                   </p>
                 </div>
                 <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -51,12 +73,17 @@ export default function Resume() {
                     Cvent R&D
                   </p>
                   <p className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                    Javascript, React, Design Systems, UX, Code Reviews, Hiring,
-                    Accessibility I lead a UI development team within Cvent R&D,
-                    focusing on our internal design system, React component
-                    libraries, and new web applications. My team works closely
-                    with UX from early ideation and Framer X prototyping to
-                    maintenance and support for consuming product teams.
+                    <p className="text-gray-500">
+                      Management, Javascript, React, Design Systems, UX, Code
+                      Reviews, Hiring, Accessibility
+                    </p>
+                    I lead a UI development team within Cvent R&D, focusing on
+                    our internal design system, React component libraries, and
+                    new web applications. My time was split between people
+                    managing, project planning, writing/reviewing code,
+                    interviewing, and mentoring. My team worked closely with UX
+                    from early ideation and prototyping to maintenance and
+                    support for consuming product teams.
                   </p>
                 </div>
                 <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -68,15 +95,18 @@ export default function Resume() {
                     Extensia
                   </p>
                   <p className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                    Typscript, Fabric.js, Angular, Bootstrap, Kendo, Webpack,
-                    Java, Tapestry As the UI lead, I designed, developed, and
-                    launched our flagship web application suite in less than a
-                    year. Our product was Google Docs for enterprise ID cards.
-                    Our customers were manually editing and printing unique ID
-                    cards via a desktop app and attached printer. Our solution
-                    was a cloud-based printer and template management system
-                    with an in-browser WYSIWYG template designer and a mobile
-                    capture app. The web app and card designer are built with
+                    <p className="text-gray-500">
+                      Typscript, Fabric.js, Angular, Bootstrap, Kendo, Webpack,
+                      Java, Tapestry
+                    </p>
+                    As the UI lead, I designed, developed, and launched our
+                    flagship web application suite in less than a year. Our
+                    product was Google Docs for enterprise ID cards. Our
+                    customers were manually editing and printing unique ID cards
+                    via a desktop app and attached printer. Our solution was a
+                    cloud-based printer and template management system with an
+                    in-browser WYSIWYG template designer and a mobile capture
+                    app. The web app and card designer are built with
                     Angular/Typescript and the mobile capture app in
                     React/Node/Express.
                   </p>
@@ -90,10 +120,13 @@ export default function Resume() {
                     CuriosityStream
                   </p>
                   <p className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                    React, Redux, Angular, Bootstrap, SASS, Wordpress, PHP,
-                    Laravel As the sole UI developer, I developed and launched
-                    our marketing site, video-on-demand streaming application,
-                    and media CMS dashboard within six months. I lead the effort
+                    <p className="text-gray-500">
+                      React, Redux, Angular, Bootstrap, SASS, Wordpress, PHP,
+                      Laravel
+                    </p>
+                    As the sole UI developer, I developed and launched our
+                    marketing site, video-on-demand streaming application, and
+                    media CMS dashboard within six months. I lead the effort
                     with our digital marketing firm to optimize our marketing
                     funnel by setting up analytics, tag management, SEO, and A/B
                     testing.
@@ -108,11 +141,13 @@ export default function Resume() {
                     StoryBlocks
                   </p>
                   <p className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                    HTML, CSS, Javascript, jQuery, PHP, Node I worked on
-                    updating and redesigning the UI for three large web
-                    applications. Additionally, I worked with the marketing team
-                    to design and code mobile landing pages, build and optimize
-                    email campaigns, set up A/B tests, and create
+                    <p className="text-gray-500">
+                      HTML, CSS, Javascript, jQuery, PHP, Node
+                    </p>
+                    I worked on updating and redesigning the UI for three large
+                    web applications. Additionally, I worked with the marketing
+                    team to design and code mobile landing pages, build and
+                    optimize email campaigns, set up A/B tests, and create
                     channel-specific landing pages for social media and SEM.
                   </p>
                 </div>
@@ -125,8 +160,10 @@ export default function Resume() {
                     Hodgson Consulting
                   </p>
                   <p className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                    HTML, CSS, Javascript, jQuery, .NET, Ektron, Wordpress I
-                    built out and integrated responsive UI’s for CMS based web
+                    <p className="text-gray-500">
+                      HTML, CSS, Javascript, jQuery, .NET, Ektron, Wordpress
+                    </p>
+                    I built out and integrated responsive UI’s for CMS based web
                     sites and web applications. Many customers were colleges and
                     non-profits, who focused on accessibility and
                     responsiveness.
