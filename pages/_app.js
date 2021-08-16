@@ -13,6 +13,10 @@ const links = [
     content: "Resume",
   },
   {
+    href: "/links",
+    content: "Favorite Links",
+  },
+  {
     href: "/utils",
     content: "Utils",
   },
