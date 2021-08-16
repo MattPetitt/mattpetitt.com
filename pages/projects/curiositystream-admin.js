@@ -11,7 +11,7 @@ function CuriositystreamApp({ ...rest }) {
     >
       <p>
         An custom Angular CMS for managing the content library. Not much secret
-        sauce here, just a lot of CRUD's.
+        sauce here, just a lot of CRUD&apos;s.
       </p>
     </Project>
   );

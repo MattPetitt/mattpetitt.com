@@ -102,16 +102,16 @@ const Error = ({ router }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="lg:text-center">
           <h1 className="text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            Sorry this doesn't exist yet.
+            Sorry this doesn&apos;t exist yet.
             <br />
-            Here's a quote instead.
+            Here&apos;s a quote instead.
           </h1>
           <blockquote className="mt-6">
             <h2
               className="lg:mx-24 mt-2 text-xl text-gray-600 font-semibold"
               suppressHydrationWarning
             >
-              "{quote.quote}"
+              &quot;{quote.quote}&quot;
             </h2>
             <p
               className="mt-2 max-w-2xl text-xl text-gray-600 lg:mx-auto"

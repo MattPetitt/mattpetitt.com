@@ -27,8 +27,8 @@ export default function Links({ data, notFound }) {
             <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
               {notFound && (
                 <h1 className="lg:text-center mt-4 max-w-2xl text-xl text-gray-600 lg:mx-auto">
-                  Sorry my favorite links aren't showing up. They're pulled from
-                  my{" "}
+                  Sorry my favorite links aren&apos;t showing up. They&apos;re
+                  pulled from my{" "}
                   <Link href="https://notion.so">
                     <a className="text-blue-600">Notion</a>
                   </Link>{" "}
@@ -76,6 +76,7 @@ export default function Links({ data, notFound }) {
                               {tags.map((tag) => {
                                 return (
                                   <span
+                                    key={tag.id}
                                     className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-${tag.color}-100 text-${tag.color}-800`}
                                   >
                                     {tag.name}
