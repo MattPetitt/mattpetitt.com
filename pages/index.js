@@ -7,11 +7,11 @@ export default function Home() {
             👋 Hey, I'm Matt.
           </h1>
           <h2 className="mt-2 text-xl text-gray-600 font-semibold">
-            I'm a Front-End Engineer @ AWS
+            I'm a Engineering Manager @ Ceridian
           </h2>
           <p className="mt-2 max-w-2xl text-xl text-gray-600 lg:mx-auto">
-            I'm a UX focused Front-End developer with over 8 years professional
-            experience, 12 if you count selling WordPress sites in high-school.
+            I'm a UX focused Engineering Manager with over 9 years professional
+            experience, 13 if you count selling WordPress sites in high-school.
           </p>
         </div>
       </div>
