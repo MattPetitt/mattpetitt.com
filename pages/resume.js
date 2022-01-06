@@ -34,7 +34,12 @@ export default function Resume() {
                 <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                   <p className="text-sm font-medium text-gray-500">Profile</p>
                   <p className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                    I’m a UI/UX focused development manager based in Reston, Virginia. For the last eight years, I have helped companies in the DC area design, launch, and maintain modern user interfaces. My most recent work has focused on design systems, component libraries, and web applications built with modern Typescript and React.
+                    I’m a UI/UX focused development manager based in Reston,
+                    Virginia. For the last eight years, I have helped companies
+                    in the DC area design, launch, and maintain modern user
+                    interfaces. My most recent work has focused on design
+                    systems, component libraries, and web applications built
+                    with modern Typescript and React.
                   </p>
                 </div>
                 <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -49,7 +54,9 @@ export default function Resume() {
                     <p className="text-gray-500">
                       Management, Planning, Hiring, Design Systems, React
                     </p>
-                    I was hired to start a new Design System initiative for Dayforce. I manage 10 developers across 2 dev teams that also include embeded designers.
+                    I was hired to start a new Design System initiative for
+                    Dayforce. I manage 10 developers across 2 dev teams that
+                    also include embeded designers.
                   </p>
                 </div>
                 <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
