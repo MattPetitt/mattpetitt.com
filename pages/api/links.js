@@ -1,6 +1,6 @@
 const { Client } = require("@notionhq/client");
 
-export default async (req, res) => {
+const getNotionLinks = async (req, res) => {
   // Initializing a client
   const notion = new Client({
     auth: process.env.NOTION_TOKEN,
@@ -14,3 +14,5 @@ export default async (req, res) => {
     results: links.results,
   });
 };
+
+export default getNotionLinks;

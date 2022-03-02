@@ -26,7 +26,7 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Matt Petitt - UX Dev</title>
+        <title>Matt Petitt - UX Manager</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar title="Matt Petitt" links={links} />

@@ -61,23 +61,23 @@ export default function Links({ data, notFound }) {
                         const tags = link.properties.Tags.multi_select;
                         return (
                           <tr key={link.id}>
-                            <td className="px-6 py-4 whitespace-nowrap">
+                            <td>
                               <div className="flex items-center">
                                 <div className="ml-4">
-                                  <div className="text-sm font-medium text-gray-900">
-                                    <Link href={url}>
-                                      <a className="text-blue-600">{name}</a>
-                                    </Link>
-                                  </div>
+                                  <Link href={url}>
+                                    <a className="text-blue-600 text-sm font-medium">
+                                      <div className="px-4 py-4">{name}</div>
+                                    </a>
+                                  </Link>
                                 </div>
                               </div>
                             </td>
-                            <td className="px-6 py-4 whitespace-nowrap">
+                            <td className="px-6 py-4">
                               {tags.map((tag) => {
                                 return (
                                   <span
                                     key={tag.id}
-                                    className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-${tag.color}-100 text-${tag.color}-800`}
+                                    className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-${tag.color}-100 text-${tag.color}-800 whitespace-nowrap`}
                                   >
                                     {tag.name}
                                   </span>

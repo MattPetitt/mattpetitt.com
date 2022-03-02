@@ -17,6 +17,10 @@ class MyDocument extends Document {
             content="Front-End Developer"
             key="title"
           />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&display=optional"
+            rel="stylesheet"
+          />
         </Head>
         <body className="bg-gray-100">
           <Main />
