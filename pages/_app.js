@@ -30,7 +30,7 @@ export default function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar title="Matt Petitt" links={links} />
-      <main>
+      <main className="min-h-screen">
         <Component {...pageProps} />
       </main>
     </>

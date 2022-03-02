@@ -13,7 +13,7 @@ function Project({
   if (isPreview) {
     return (
       <Link href={page}>
-        <a className="flex flex-col md:flex-row text-gray-900 hover:text-blue-600 transition-transform transform hover:-translate-y-0.5 hover:scale-105">
+        <a className="flex flex-col md:flex-row text-gray-900 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-transform transform hover:-translate-y-0.5 hover:scale-105">
           <div className="flex-shrink-0 ">
             <div className="flex items-center justify-center h-24 w-36 relative shadow overflow-hidden border-b border-gray-200">
               <Image
@@ -27,7 +27,9 @@ function Project({
           </div>
           <div className="md:ml-4 mt-4 md:mt-0">
             <p className="text-lg leading-6 font-medium ">{title}</p>
-            <p className="mt-2 text-base text-gray-600">{description}</p>
+            <p className="mt-2 text-base text-gray-600 dark:text-gray-300">
+              {description}
+            </p>
           </div>
         </a>
       </Link>
@@ -36,10 +38,10 @@ function Project({
   return (
     <div className="font-sans leading-normal tracking-normal py-12">
       <div className="text-center pt-12 px-4">
-        <h1 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 md:text-4xl">
+        <h1 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 dark:text-gray-100 md:text-4xl">
           {title}
         </h1>
-        <p className="text-xl py-2 font-semibold text-gray-600">
+        <p className="text-xl py-2 font-semibold text-gray-600 dark:text-gray-300">
           {description}
         </p>
         {link ? (
@@ -54,7 +56,7 @@ function Project({
             </Link>
           </div>
         ) : (
-          <p className="text-gray-600">
+          <p className="text-gray-600 dark:text-gray-300">
             Unfortunately this site is no longer live.
           </p>
         )}
@@ -73,7 +75,7 @@ function Project({
       </div>
 
       <div className="container mx-auto max-w-5xl">
-        <div className="bg-white prose w-full p-8 text-gray-800 shadow border-b border-gray-200 rounded-lg text-lg leading-relaxed">
+        <div className="bg-white dark:bg-slate-800 prose w-full p-8 text-gray-800 dark:text-gray-200 shadow border-b border-gray-200 dark:border-slate-900 rounded-lg text-lg leading-relaxed">
           {children}
         </div>
       </div>

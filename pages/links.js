@@ -36,25 +36,25 @@ export default function Links({ data, notFound }) {
                 </h1>
               )}
               {!notFound && (
-                <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
-                  <table className="min-w-full divide-y divide-gray-200">
-                    <thead className="bg-gray-50">
+                <div className="shadow overflow-hidden border-b border-gray-200 dark:border-slate-900 sm:rounded-lg">
+                  <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-900">
+                    <thead className="bg-gray-50 dark:bg-slate-800">
                       <tr>
                         <th
                           scope="col"
-                          className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                          className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-100 uppercase tracking-wider"
                         >
                           Title
                         </th>
                         <th
                           scope="col"
-                          className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                          className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-100 uppercase tracking-wider"
                         >
                           Tags
                         </th>
                       </tr>
                     </thead>
-                    <tbody className="bg-white divide-y divide-gray-200">
+                    <tbody className="bg-white dark:bg-slate-800 divide-y divide-gray-200 dark:divide-slate-900">
                       {data.results.map((link) => {
                         const name = link.properties.Name.title[0].plain_text;
                         const url = link.properties.URL.url;
@@ -65,7 +65,7 @@ export default function Links({ data, notFound }) {
                               <div className="flex items-center">
                                 <div className="ml-4">
                                   <Link href={url}>
-                                    <a className="text-blue-600 text-sm font-medium">
+                                    <a className="text-blue-600 dark:text-blue-400 text-sm font-medium">
                                       <div className="px-4 py-4">{name}</div>
                                     </a>
                                   </Link>
@@ -77,7 +77,7 @@ export default function Links({ data, notFound }) {
                                 return (
                                   <span
                                     key={tag.id}
-                                    className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-${tag.color}-100 text-${tag.color}-800 whitespace-nowrap`}
+                                    className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-${tag.color}-100 dark:bg-${tag.color}-700 text-${tag.color}-800 dark:text-${tag.color}-100 whitespace-nowrap`}
                                   >
                                     {tag.name}
                                   </span>
