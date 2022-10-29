@@ -16,11 +16,11 @@ export default function Navbar({ title, links }) {
     };
   }, [router.events]);
   return (
-    <nav className="bg-gray-800 fixed w-full z-50">
+    <nav className="bg-gray-800/75 fixed w-full z-50  backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <div className="flex-shrink-0 text-white logo text-xl">
+            <div className="flex-shrink-0 text-white logo text-xl font-extrabold">
               <Link key={title} href="/">
                 {title}
               </Link>
@@ -37,8 +37,8 @@ export default function Navbar({ title, links }) {
                     }
                   );
                   return (
-                    <Link key={id || content} href={href}>
-                      <a className={classes}>{content}</a>
+                    <Link key={id || content} href={href} className={classes}>
+                      {content}
                     </Link>
                   );
                 })}
@@ -93,19 +93,19 @@ export default function Navbar({ title, links }) {
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           {links.map(({ id, href, content }) => {
             return (
-              <Link key={id || content} href={href}>
-                <a
-                  className={classNames(
-                    "block px-3 py-2 rounded-md text-base font-medium",
-                    {
-                      "text-gray-300 hover:text-white hover:bg-gray-700":
-                        router.pathname !== href,
-                      " text-white bg-gray-900": router.pathname === href,
-                    }
-                  )}
-                >
-                  {content}
-                </a>
+              <Link
+                key={id || content}
+                href={href}
+                className={classNames(
+                  "block px-3 py-2 rounded-md text-base font-medium",
+                  {
+                    "text-gray-300 hover:text-white hover:bg-gray-700":
+                      router.pathname !== href,
+                    " text-white bg-gray-900": router.pathname === href,
+                  }
+                )}
+              >
+                {content}
               </Link>
             );
           })}

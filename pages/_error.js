@@ -101,20 +101,18 @@ const Error = ({ router }) => {
     <div className="flex md:items-center md:min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="lg:text-center">
-          <h1 className="text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            Sorry this doesn&apos;t exist yet.
-            <br />
-            Here&apos;s a quote instead.
-          </h1>
+          <h2 className="lg:mx-24 mt-2 text-xl text-gray-600 dark:text-white font-semibold">
+            Sorry this doesn&apos;t exist yet. Here&apos;s a quote instead.
+          </h2>
           <blockquote className="mt-6">
-            <h2
-              className="lg:mx-24 mt-2 text-xl text-gray-600 font-semibold"
+            <h1
+              className="text-3xl leading-8 font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl"
               suppressHydrationWarning
             >
               &quot;{quote.quote}&quot;
-            </h2>
+            </h1>
             <p
-              className="mt-2 max-w-2xl text-xl text-gray-600 lg:mx-auto"
+              className="mt-2 max-w-2xl text-xl text-gray-600 dark:text-white italic lg:mx-auto"
               suppressHydrationWarning
             >
               — {quote.author}

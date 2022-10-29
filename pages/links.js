@@ -29,8 +29,8 @@ export default function Links({ data, notFound }) {
                 <h1 className="lg:text-center mt-4 max-w-2xl text-xl text-gray-600 lg:mx-auto">
                   Sorry my favorite links aren&apos;t showing up. They&apos;re
                   pulled from my{" "}
-                  <Link href="https://notion.so">
-                    <a className="text-blue-600">Notion</a>
+                  <Link href="https://notion.so" className="text-blue-600">
+                    Notion
                   </Link>{" "}
                   database which might be down.
                 </h1>
@@ -64,10 +64,11 @@ export default function Links({ data, notFound }) {
                             <td>
                               <div className="flex items-center">
                                 <div className="ml-4">
-                                  <Link href={url}>
-                                    <a className="text-blue-600 dark:text-blue-400 text-sm font-medium">
-                                      <div className="px-4 py-4">{name}</div>
-                                    </a>
+                                  <Link
+                                    href={url}
+                                    className="text-blue-600 dark:text-white text-sm font-medium"
+                                  >
+                                    <div className="px-4 py-4">{name}</div>
                                   </Link>
                                 </div>
                               </div>

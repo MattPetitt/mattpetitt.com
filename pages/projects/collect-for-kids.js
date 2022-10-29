@@ -1,10 +1,11 @@
 import Project from "components/Project";
+import preview from "../../public/images/collect-for-kids.jpg";
 
 function CollectForKids({ ...rest }) {
   return (
     <Project
       title="Collect For Kids"
-      image="/images/collect-for-kids.jpg"
+      image={preview}
       page="/projects/collect-for-kids"
       description="Organizing school supply and backpack donations."
       {...rest}

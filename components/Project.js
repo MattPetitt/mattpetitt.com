@@ -12,26 +12,26 @@ function Project({
 }) {
   if (isPreview) {
     return (
-      <Link href={page}>
-        <a className="flex flex-col md:flex-row text-gray-900 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-transform transform hover:-translate-y-0.5 hover:scale-105">
-          <div className="flex-shrink-0 ">
-            <div className="flex items-center justify-center h-24 w-36 relative shadow overflow-hidden border-b border-gray-200">
-              <Image
-                className="rounded-sm"
-                objectFit="cover"
-                src={image}
-                layout="fill"
-                alt={title}
-              />
-            </div>
+      <Link
+        href={page}
+        className="flex flex-col md:flex-row text-gray-900 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-transform transform hover:-translate-y-0.5 hover:scale-105"
+      >
+        <div className="flex-shrink-0 ">
+          <div className="flex items-center justify-center h-24 w-36 relative shadow overflow-hidden">
+            <Image
+              className="rounded-md"
+              src={image}
+              layout="fill"
+              alt={title}
+            />
           </div>
-          <div className="md:ml-4 mt-4 md:mt-0">
-            <p className="text-lg leading-6 font-medium ">{title}</p>
-            <p className="mt-2 text-base text-gray-600 dark:text-gray-300">
-              {description}
-            </p>
-          </div>
-        </a>
+        </div>
+        <div className="md:ml-4 mt-4 md:mt-0">
+          <p className="text-lg leading-6 font-medium ">{title}</p>
+          <p className="mt-2 text-base text-gray-600 dark:text-gray-300">
+            {description}
+          </p>
+        </div>
       </Link>
     );
   }
@@ -46,13 +46,12 @@ function Project({
         </p>
         {link ? (
           <div className="my-6">
-            <Link href={link}>
-              <a
-                target="_blank"
-                className="transition duration-500 ease-in-out transform hover:-translate-1 hover:scale-105 bg-blue-600 text-white font-semibold py-3 px-8 rounded-md"
-              >
-                Check It Out
-              </a>
+            <Link
+              href={link}
+              target="_blank"
+              className="transition duration-500 ease-in-out transform hover:-translate-1 hover:scale-105 bg-blue-600 text-white font-semibold py-3 px-8 rounded-md"
+            >
+              Check It Out
             </Link>
           </div>
         ) : (
@@ -62,14 +61,15 @@ function Project({
         )}
       </div>
       <div className="container mx-auto max-w-5xl py-6">
-        <img
+        <Image
           style={{
             width: "100%",
             height: "auto",
             maxHeight: "auto",
             maxWidth: "100%",
           }}
-          className="rounded shadow border-b"
+          alt={title}
+          className="rounded-md shadow"
           src={image}
         />
       </div>

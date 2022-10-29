@@ -1,10 +1,11 @@
 import Project from "components/Project";
+import preview from "../../public/images/card-designer.jpg";
 
 function CardDesigner({ ...rest }) {
   return (
     <Project
       title="HID Card Designer"
-      image="/images/card-designer.jpg"
+      image={preview}
       page="/projects/card-designer"
       link="https://www.youtube.com/watch?v=nLlHYBISog8"
       description="WYSIWYG ID Card Designer."

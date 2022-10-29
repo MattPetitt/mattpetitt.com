@@ -1,10 +1,11 @@
 import Project from "components/Project";
+import preview from "../../public/images/curiositystream-admin.jpg";
 
 function CuriositystreamApp({ ...rest }) {
   return (
     <Project
       title="CuriosityStream CMS"
-      image="/images/curiositystream-admin.jpg"
+      image={preview}
       page="/projects/curiositystream-admin"
       description="Admin Dashboard"
       {...rest}

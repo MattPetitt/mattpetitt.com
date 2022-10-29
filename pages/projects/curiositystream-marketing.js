@@ -1,10 +1,11 @@
 import Project from "components/Project";
+import preview from "../../public/images/curiositystream-marketing.jpg";
 
 function CuriositystreamApp({ ...rest }) {
   return (
     <Project
       title="CuriosityStream Marketing Site"
-      image="/images/curiositystream-marketing.jpg"
+      image={preview}
       page="/projects/curiositystream-marketing"
       link="https://curiositystream.com/"
       description="Marketing Site"

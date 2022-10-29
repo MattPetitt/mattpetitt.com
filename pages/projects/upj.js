@@ -1,10 +1,11 @@
 import Project from "components/Project";
+import preview from "../../public/images/university-of-pittsburgh-at-johnstown.jpg";
 
 function Upj({ ...rest }) {
   return (
     <Project
       title="University of Pittsburgh at Johnstown"
-      image="/images/university-of-pittsburgh-at-johnstown.jpg"
+      image={preview}
       page="/projects/upj"
       link="http://www.upj.pitt.edu/"
       description="Website for the University of Pittsburgh at Johnstown."

@@ -1,10 +1,11 @@
 import Project from "components/Project";
+import preview from "../../public/images/synapsify.jpg";
 
 function Synapsify({ ...rest }) {
   return (
     <Project
       title="Synapsify"
-      image="/images/synapsify.jpg"
+      image={preview}
       page="/projects/synapsify"
       link="https://www.youtube.com/watch?v=E8R8IVj5v-Y"
       description="Natural language processing dashboard."

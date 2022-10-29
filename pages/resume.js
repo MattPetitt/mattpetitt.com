@@ -110,9 +110,9 @@ export default function Resume() {
                       {employer}
                     </p>
                     <p className="mt-1 text-sm text-gray-900 dark:text-gray-200 sm:mt-0 sm:col-span-2">
-                      <p className="text-gray-500 dark:text-gray-300">
+                      <span className="text-gray-500 dark:text-gray-300">
                         {skills}
-                      </p>
+                      </span>
                       {description}
                     </p>
                   </div>

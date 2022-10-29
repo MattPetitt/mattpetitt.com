@@ -1,10 +1,11 @@
 import Project from "components/Project";
+import preview from "../../public/images/curiositystream-app.jpg";
 
 function CuriositystreamApp({ ...rest }) {
   return (
     <Project
       title="CuriosityStream Web Streaming App"
-      image="/images/curiositystream-app.jpg"
+      image={preview}
       page="/projects/curiositystream-app"
       link="https://app.curiositystream.com/"
       description="A SVOD Web Application."
