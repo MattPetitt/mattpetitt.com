@@ -4,10 +4,10 @@ export default function Resume() {
   const jobs = [
     {
       title: "Engineering Manager",
-      employer: "Ceridian Dayforce",
-      skills: "Management, Planning, Hiring, Design Systems, React",
+      employer: "Dayforce",
+      skills: "Management, Design Systems, React, UX",
       description:
-        "I was hired to start a new Design System initiative for Dayforce. I manage 10 developers across 2 dev teams that also include embeded designers.",
+        "I founded and manage the Design System engineering team, which in less than two years has been adopted by dozens of teams in production. I also manage the Experience Architecture team which sets the technical direction for UI development across Ceridian.",
     },
     {
       title: "Front-End Engineer",
