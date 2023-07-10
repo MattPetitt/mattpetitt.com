@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Navbar from "components/Navbar";
+import { Analytics } from "@vercel/analytics/react";
 import "tailwindcss/tailwind.css";
 import "./styles.css";
 
@@ -29,6 +30,7 @@ export default function MyApp({ Component, pageProps }) {
         <title>Matt Petitt - UX Manager</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Analytics />
       <Navbar title="Matt Petitt" links={links} />
       <main className="min-h-screen">
         <Component {...pageProps} />
