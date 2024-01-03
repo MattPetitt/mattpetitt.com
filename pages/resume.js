@@ -61,17 +61,11 @@ export default function Resume() {
       </Head>
       <div className="py-20 sm:py-24">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="lg:text-center">
-            <h1 className="text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"></h1>
-          </div>
           <div className="mt-4 bg-white dark:bg-slate-800 shadow overflow-hidden rounded-lg">
             <div className="px-4 py-5 sm:px-6">
               <h3 className="text-3xl leading-6 font-extrabold text-gray-900 dark:text-gray-100">
                 Matt Petitt
               </h3>
-              <p className="mt-3 max-w-2xl text-sm text-gray-500 dark:text-gray-200">
-                1616 Fieldthorn Drive, Reston VA, 20194
-              </p>
               <p className="max-w-2xl text-sm text-gray-500 dark:text-gray-200">
                 703-678-6047 |{" "}
                 <a
@@ -89,12 +83,12 @@ export default function Resume() {
                     Profile
                   </p>
                   <p className="mt-1 text-sm text-gray-900 dark:text-gray-100 sm:mt-0 sm:col-span-2">
-                    I’m a UI/UX focused development manager based in Reston,
-                    Virginia. For the last eight years, I have helped companies
-                    in the DC area design, launch, and maintain modern user
-                    interfaces. My most recent work has focused on design
-                    systems, component libraries, and web applications built
-                    with modern Typescript and React.
+                    I’m a UI/UX focused manager based in Reston, Virginia. I
+                    have helped companies design, launch, and maintain design
+                    systems and modern user interfaces for the last twelve
+                    years. My most recent work has focused on design systems,
+                    component libraries, and web applications built with modern
+                    Typescript and React.
                   </p>
                 </div>
                 {jobs.map(({ title, employer, skills, description }) => (
@@ -117,17 +111,6 @@ export default function Resume() {
                     </p>
                   </div>
                 ))}
-                <div className="bg-white dark:bg-slate-800 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                  <p className="text-sm font-medium text-gray-500 dark:text-gray-300">
-                    Hackathons
-                  </p>
-                  <p className="mt-1 text-sm text-gray-900 dark:text-gray-200 sm:mt-0 sm:col-span-2">
-                    Twitters 2nd Place prize at HackMIT for PartyGenius
-                    Cambridge, MA; Nov 2013
-                    <br />
-                    Y-Hack; New Haven, CT; Nov 2013
-                  </p>
-                </div>
                 <div className="bg-white dark:bg-slate-800 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                   <p className="text-sm font-medium text-gray-500 dark:text-gray-300">
                     Skills
